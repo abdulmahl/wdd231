@@ -51,20 +51,22 @@ nav.show {
   flex-direction: column;
   padding: 5px 10px;
   gap: 15px;
-  a {
-    text-decoration: none;
-    color: #063b8c;
-  }
+}
+
+nav.show a {
+  text-decoration: none;
+  color: #063b8c;
 }
 
 main {
   padding: 5px 10px;
-  section h2 {
-    text-align: left;
-    background-color: #063b8c;
-    color: #f5c400;
-    padding: 5px 3px;
-  }
+}
+
+main section h2 {
+  text-align: left;
+  background-color: #063b8c;
+  color: #f5c400;
+  padding: 5px 3px;
 }
 
 .profile-image {
@@ -87,19 +89,21 @@ main {
   grid-template-columns: repeat(3, auto);
   padding: 5px 0;
   column-gap: 6px;
-  button {
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    background-color: #063b8c;
-    color: #f5c400;
-    border-radius: 13px;
-    font-size: large;
-  }
-  button:hover {
-    background-color: #f5c400;
-    color: #f7f9fc;
-  }
+}
+
+.certificate-btns button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: #063b8c;
+  color: #f5c400;
+  border-radius: 13px;
+  font-size: large;
+}
+
+.certificate-btns button:hover {
+  background-color: #f5c400;
+  color: #f7f9fc;
 }
 
 footer {
