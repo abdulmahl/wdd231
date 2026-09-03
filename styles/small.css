@@ -109,7 +109,4 @@ main section h2 {
 footer {
   padding: 5px 10px;
   text-align: center;
-  span#lastModified {
-    color: #f5c400;
-  }
 }
