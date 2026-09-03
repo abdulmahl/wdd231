@@ -2,12 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="WDD231 course home page for Mduduzi Abdul Mahlangu."
+    />
+    <meta name="author" content="Mduduzi Abdul Mahlangu" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <title>WDD231.003 - Web Frontend Development I</title>
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mduduzi Abdul Mahlangu - WDD231</title>
   </head>
   <body>
-    <h1>WDD231 Web Forntend Development</h1>
-    <p>Hello World</p>
+    <div class="site-header">
+      <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512" />
+        <span>The Site Name</span>
+        <button type="button" id="ham-btn" class="hamburger"></button>
+      </header>
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+      </nav>
+    </div>
+    <main>
+      <h1>Home</h1>
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+          sapiente quam cum voluptatem beatae error atque mollitia harum alias
+          obcaecati! Odit sit facere illo unde pariatur illum eum cupiditate!
+          Quos praesentium maxime nostrum aliquid nam numquam tenetur neque
+          quasi pariatur? Itaque aperiam harum libero modi nulla totam
+          cupiditate impedit. Illum magnam consequuntur natus, veniam deleniti
+          rerum iste eius temporibus dicta! Nesciunt nobis doloribus nulla!
+          Nesciunt, aliquid.
+        </p>
+      </section>
+
+      <section>
+        <h2>Student Photo</h2>
+        <img src="images/profile.webp" alt="My Profile" class="profile-image" />
+      </section>
+
+      <section>
+        <h2>Web and Computer Programming Certificates</h2>
+        <div class="certificate-btns course-filter">
+          <button class="all-btn">ALL Courses</button>
+          <button class="cse-btn">CSE Courses</button>
+          <button class="wdd-btn">WDD Courses</button>
+        </div>
+        <div id="courseCards"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div><i></i><i></i><i></i></div>
+        <p>
+          <span id="currentYear"></span> &bull; Mduduzi Abdul Mahlangu &bull;
+          Mamelodi, South Africa
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+    <script type="module" src="scripts/index.js"></script>
   </body>
 </html>

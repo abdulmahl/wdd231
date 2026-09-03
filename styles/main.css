@@ -1,0 +1,40 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px #063B8C;
+  align-items: end;
+  column-gap: 6px;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+header span {
+  color: steelblue;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: steelblue;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.hamburger::after {
+  content: "\2630";
+}
+
+.hamburger.show::after {
+  content: "\00D7";
+}

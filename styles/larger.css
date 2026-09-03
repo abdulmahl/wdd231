@@ -1,0 +1,46 @@
+@media only screen and (min-width: 38rem) {
+  .hamburger {
+    display: none;
+  }
+
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 888px;
+    margin: 0 auto;
+  }
+
+  .site-header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    nav {
+      display: flex;
+      gap: 12px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  header {
+    border-bottom: none;
+  }
+
+  .certificate-btns {
+    button {
+      cursor: pointer;
+    }
+  }
+
+  #courseCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7px;
+  }
+
+  main {
+    border-top: 1px solid #063b8c;
+  }
+}

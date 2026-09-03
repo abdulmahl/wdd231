@@ -1,0 +1,101 @@
+* {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px #063b8c;
+  align-items: end;
+  column-gap: 6px;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+header span {
+  color: #063b8c;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #063b8c;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.hamburger::after {
+  content: "\2630";
+}
+
+.hamburger.open::after {
+  content: "\00D7";
+}
+
+nav {
+  display: none;
+}
+
+nav.show {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  gap: 15px;
+  a {
+    text-decoration: none;
+    color: #063b8c;
+  }
+}
+
+main {
+  padding: 5px 10px;
+  section h2 {
+    text-align: left;
+    background-color: #063b8c;
+    color: #f5c400;
+    padding: 5px 3px;
+  }
+}
+
+.profile-image {
+  max-width: fit-content;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.course-card {
+  padding: 5px 10px;
+  border: #063b8c solid 1.3px;
+  margin: 7px 0;
+}
+
+.certificate-title {
+  text-align: center;
+}
+
+.certificate-btns {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 5px 0;
+  column-gap: 6px;
+  button {
+    cursor: pointer;
+  }
+}
+
+footer {
+  padding: 5px 10px;
+  text-align: center;
+  span#lastModified {
+    color: #f5c400;
+  }
+}
