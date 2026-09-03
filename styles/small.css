@@ -67,8 +67,8 @@ main {
 }
 
 .profile-image {
-  max-width: fit-content;
-  width: 100%;
+  max-width: 100%;
+
   border-radius: 7px;
 }
 
