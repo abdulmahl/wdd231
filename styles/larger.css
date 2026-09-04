@@ -29,10 +29,8 @@
     border-bottom: none;
   }
 
-  .certificate-btns {
-    button {
-      cursor: pointer;
-    }
+  .certificate-btns button {
+    cursor: pointer;
   }
 
   #courseCards {
