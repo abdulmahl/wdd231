@@ -42,6 +42,10 @@ header span {
   content: "\00D7";
 }
 
+.button-shoosher {
+  display: none;
+}
+
 nav {
   display: none;
 }
@@ -80,6 +84,10 @@ main section h2 {
   margin: 7px 0;
 }
 
+.completed-tag {
+  color: #15803d;
+}
+
 .certificate-title {
   text-align: center;
 }
@@ -106,7 +114,23 @@ main section h2 {
   color: #f7f9fc;
 }
 
+#totalCredits {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
 footer {
   padding: 5px 10px;
   text-align: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.social-icons img {
+  width: 9%;
+  height: auto;
 }

@@ -96,10 +96,15 @@ function displayCourses(courseList) {
     const card = document.createElement("div");
     card.classList.add("course-card");
     card.innerHTML = `<h3>Course: ${course.subject} ${course.number} </h3>
-  <p>Title: ${course.title}</p>
-  <p>Total Credits: ${course.credits}</p>`;
+   Course Complete: ${course.completed ? '<span class="completed-tag">Yes</span>' : "No"}`;
     courseCards.append(card);
   });
+  const total = courseList.reduce((sum, course) => {
+    return sum + course.credits;
+  }, 0);
+
+  document.querySelector("#totalCredits").textContent =
+    `Total Credits: ${total} `;
 }
 
 displayCourses(courses);
