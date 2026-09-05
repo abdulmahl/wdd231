@@ -60,6 +60,24 @@ nav.show {
 nav.show a {
   text-decoration: none;
   color: #063b8c;
+  padding: 5px;
+}
+
+nav.show a:hover {
+  background-color: #063b8c;
+  color: #f7f9fc;
+}
+
+nav.show a.active {
+  background-color: #063b8c;
+  color: #f7f9fc;
+  cursor: default;
+}
+
+h2,
+h1,
+p {
+  margin: 3px auto;
 }
 
 main {
@@ -75,7 +93,6 @@ main section h2 {
 
 .profile-image {
   max-width: 100%;
-  border-radius: 13px;
 }
 
 .course-card {
