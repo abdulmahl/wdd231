@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 1020px) {
   .social-icons img {
     width: 3%;
   }
