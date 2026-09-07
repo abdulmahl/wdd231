@@ -124,3 +124,11 @@ cseButton.addEventListener("click", () => {
 allButton.addEventListener("click", () => {
   displayCourses(courses);
 });
+
+const personOne = {
+  fullName: "",
+  age: 99,
+  favColor: "#33ee11",
+};
+
+

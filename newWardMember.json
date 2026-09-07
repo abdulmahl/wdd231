@@ -1,0 +1,23 @@
+{
+  "family_name": "Jackson",
+  "move_in_date": "",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "full_name": "Judy Jackson",
+      "gender": "female",
+      "birthdate": "22-April-2003"
+    },
+    {
+      "full_name": "Paul Jackson",
+      "gender": "male",
+      "birthdate": "2-May-2001"
+    },
+    {
+      "full_name": "Jammie Jackson",
+      "gender": "female",
+      "birthdate": "24-June-2023"
+    }
+  ]
+}
