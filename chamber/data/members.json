@@ -4,7 +4,7 @@
     "address": "123 Tsweu Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0101",
     "website": "https://example.com",
-    "image": "images/mamelodi-tech-hub.jpg",
+    "image": "images/business_images/mamelodi-tech-hub.jpeg",
     "membership": "Gold",
     "category": "Technology",
     "description": "A local technology and computer services business providing web development, computer repairs, networking, and digital solutions to individuals and small businesses."
@@ -14,7 +14,7 @@
     "address": "45 Koma Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0102",
     "website": "https://example.com",
-    "image": "images/section-k-fresh-market.jpg",
+    "image": "images/business_images/section-k-fresh-market.jpeg",
     "membership": "Silver",
     "category": "Retail",
     "description": "A community-focused grocery store offering fresh fruit, vegetables, household essentials, and everyday groceries at affordable prices."
@@ -24,7 +24,7 @@
     "address": "78 Solomon Mahlangu Drive, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0103",
     "website": "https://example.com",
-    "image": "images/mamelodi-auto-centre.jpg",
+    "image": "images/business_images/mamelodi-auto-centre.jpeg",
     "membership": "Gold",
     "category": "Automotive",
     "description": "Professional vehicle servicing and repair centre offering mechanical repairs, diagnostics, tyre services, and general vehicle maintenance."
@@ -34,7 +34,7 @@
     "address": "19 Mandela Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0104",
     "website": "https://example.com",
-    "image": "images/ubuntu-creative-studio.jpg",
+    "image": "images/business_images/ubuntu-creative-studio.jpeg",
     "membership": "Bronze",
     "category": "Creative Services",
     "description": "A creative design studio helping local businesses with branding, graphic design, photography, social media content, and promotional materials."
@@ -44,7 +44,7 @@
     "address": "210 Mahlatse Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0105",
     "website": "https://example.com",
-    "image": "images/mamelodi-family-pharmacy.jpg",
+    "image": "images/business_images/mamelodi-family-pharmacy.jpeg",
     "membership": "Silver",
     "category": "Healthcare",
     "description": "A community pharmacy providing everyday healthcare products, wellness services, and professional assistance to families in the Mamelodi West community."
@@ -54,7 +54,7 @@
     "address": "56 Kgosi Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0106",
     "website": "https://example.com",
-    "image": "images/golden-plate-catering.jpg",
+    "image": "images/business_images/golden-plate-catering.jpeg",
     "membership": "Bronze",
     "category": "Food & Catering",
     "description": "A locally owned catering company providing meals, platters, and catering services for family celebrations, business events, and community gatherings."
@@ -64,7 +64,7 @@
     "address": "88 Maphanga Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0107",
     "website": "https://example.com",
-    "image": "images/thuto-accounting.jpg",
+    "image": "images/business_images/thuto-accounting.jpeg",
     "membership": "Gold",
     "category": "Professional Services",
     "description": "A small-business accounting and financial services company helping entrepreneurs with bookkeeping, tax preparation, financial planning, and business administration."
@@ -74,9 +74,10 @@
     "address": "34 Motsepe Street, Mamelodi West, Pretoria, 0122",
     "phone": "+27 12 555 0108",
     "website": "https://example.com",
-    "image": "images/mamelodi-hardware.jpg",
+    "image": "images/business_images/mamelodi-hardware.jpeg",
     "membership": "Silver",
     "category": "Construction & Hardware",
     "description": "A neighbourhood hardware supplier providing building materials, tools, plumbing supplies, electrical products, and home improvement essentials."
   }
 ]
+

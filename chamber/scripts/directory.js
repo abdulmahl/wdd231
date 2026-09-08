@@ -8,7 +8,7 @@ hamButton.addEventListener("click", () => {
 
 const url = "https://abdulmahl.github.io/wdd231/chamber/data/members.json";
 
-const members = document.querySelector("#members");
+const business_members = document.querySelector("#members");
 
 const fetchMemberData = async () => {
   const response = await fetch(url);
@@ -18,3 +18,14 @@ const fetchMemberData = async () => {
 };
 
 fetchMemberData();
+
+const displayMembers = (members) => {
+  members.forEach((member) => {
+    let member_card = document.createElement("section");
+    let member_name = document.createElement("h2");
+    let tag_line = document.createElement("p");
+
+    let member_image = document.createElement("img");
+    member_image.setAttribute("src", member.image)
+  });
+};
