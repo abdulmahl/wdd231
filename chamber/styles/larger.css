@@ -1,0 +1,51 @@
+@media only screen and (min-width: 38rem) {
+  header img {
+    width: 23%;
+  }
+}
+
+@media only screen and (min-width: 45rem) {
+  .site-header,
+  main,
+  footer {
+    max-width: 888px;
+    margin: 0 auto;
+  }
+
+  .theme-button-small {
+    display: none;
+  }
+
+  .theme-button-large {
+    display: flex;
+  }
+
+  header img {
+    width: 35%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .site-header {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 21px;
+  }
+
+  nav ul a {
+    text-decoration: none;
+  }
+}
