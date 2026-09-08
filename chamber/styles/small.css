@@ -3,7 +3,6 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #063b8c;
   margin: 0;
 }
 
@@ -66,13 +65,33 @@ nav.show ul a {
   color: #063b8c;
 }
 
-main {
-  padding: 10px 5px;
-}
-
 .view-buttons {
   display: flex;
   justify-content: center;
   padding: 20px 0;
   gap: 7px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 9px;
+  align-items: center;
+  background-color: #063b8c;
+  margin: 0.666rem;
+}
+
+.member-card img {
+  width: 100%;
+}
+
+.title-container {
+  color: #f7f9fc;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.title-container h2 {
+  border-bottom: #f7f9fc solid 1px;
 }
