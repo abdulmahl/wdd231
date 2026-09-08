@@ -6,7 +6,7 @@ hamButton.addEventListener("click", () => {
   menuItems.classList.toggle("show");
 });
 
-const url = "https://github.com/abdulmahl/wdd231/chamber/data/members.json";
+const url = "https://abdulmahl.github.io/wdd231/chamber/data/members.json";
 
 const members = document.querySelector("#members");
 
