@@ -2,6 +2,9 @@
   header img {
     width: 23%;
   }
+  .business-members {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 45rem) {
@@ -23,6 +26,10 @@
   header img {
     width: 35%;
   }
+  header {
+    display: block;
+    width: 66%;
+  }
 
   .hamburger {
     display: none;
@@ -35,17 +42,21 @@
 
   nav {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 9px;
   }
 
   nav ul {
     display: flex;
     list-style-type: none;
-    gap: 21px;
+    gap: 10px;
+    padding: 0;
   }
 
   nav ul a {
     text-decoration: none;
+  }
+
+  .business-members {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

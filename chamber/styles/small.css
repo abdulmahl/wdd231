@@ -109,3 +109,8 @@ nav.show ul a {
   color: #f7f9fc;
   text-decoration: none;
 }
+
+.business-members {
+  display: grid;
+  grid-template-columns: 1fr;
+}
