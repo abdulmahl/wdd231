@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
   margin: 0;
+  color: #063b8c;
 }
 
 header {
@@ -50,7 +51,8 @@ nav {
 
 nav.show {
   display: flex;
-  padding: 0px 10px;
+  padding: 10px;
+  border-top: #063b8c solid 0.7px;
 }
 
 nav.show ul {
@@ -58,17 +60,32 @@ nav.show ul {
   flex-direction: column;
   list-style: none;
   padding: 0;
+  gap: 12px;
 }
 
 nav.show ul a {
   text-decoration: none;
   color: #063b8c;
+  padding: 3px 5px;
+  border-radius: 9px;
+}
+
+nav.show ul a.active {
+  background-color: #063b8c;
+  color: #f7f9fc;
+  cursor: default;
+}
+
+.dir-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: #063b8c solid 0.7px;
 }
 
 .view-buttons {
   display: flex;
-  justify-content: center;
-  padding: 20px 0;
   gap: 7px;
 }
 
@@ -77,22 +94,24 @@ nav.show ul a {
   flex-direction: column;
   padding: 10px;
   gap: 9px;
-  align-items: center;
   background-color: #063b8c;
-  margin: 0.666rem;
+  margin: 0.222rem;
+  border-radius: 9px;
 }
 
 .member-card img {
-  width: 30%;
+  width: 39%;
+  border-radius: 9px;
 }
 
 .image-wrapper {
   display: flex;
-  justify-content: space-start;
-  gap: 12px;
+  justify-content: start;
+  gap: 9px;
 }
 
-.title-container {
+.title-container h2,
+p {
   color: #f7f9fc;
 }
 
@@ -113,4 +132,5 @@ nav.show ul a {
 .business-members {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 5px;
 }

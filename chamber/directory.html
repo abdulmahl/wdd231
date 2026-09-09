@@ -36,7 +36,13 @@
     <div class="site-header">
       <header>
         <img src="images/logo_light.svg" alt="Site Logo" />
-        <button id="theme-toggle" class="theme-button-small" aria-label="Toggle dark mode">&#9728;</button>
+        <button
+          id="theme-toggle"
+          class="theme-button-small"
+          aria-label="Toggle dark mode"
+        >
+          &#9728;
+        </button>
         <button
           type="button"
           id="ham-btn"
@@ -48,21 +54,30 @@
       </header>
       <nav id="menuItems">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Directory</a></li>
-          <li><a href="">Join</a></li>
-          <li><a href="">Discover</a></li>
+          <li><a  href="" class="active">Home</a></li>
+          <li><a  href="" class="">Directory</a></li>
+          <li><a  href="" class="">Join</a></li>
+          <li><a  href="" class="">Discover</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-button-large" aria-label="Toggle dark mode">&#9728;</button>
+        <button
+          id="theme-toggle"
+          class="theme-button-large"
+          aria-label="Toggle dark mode"
+        >
+          &#9728;
+        </button>
       </nav>
     </div>
 
     <main>
-      <div>
-
-
+      <div class="dir-heading">
+        <h1>Directory</h1>
+        <div id="viewBtns" class="view-buttons">
+          <button type="button">Grid</button>
+          <button type="button">List</button>
+        </div>
       </div>
-      
+
       <div id="members" class="business-members"></div>
     </main>
     <footer></footer>

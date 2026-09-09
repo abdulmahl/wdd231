@@ -4,12 +4,23 @@
   }
   .business-members {
     grid-template-columns: 1fr 1fr;
+    padding: 5px 10px;
+  }
+
+  .dir-heading {
+    padding: 15px 15px 0;
+  }
+
+  nav.show ul a:hover {
+    background-color: #063b8c;
+    color: #f7f9fc;
   }
 }
 
 @media only screen and (min-width: 45rem) {
   .site-header,
   main,
+  nav,
   footer {
     max-width: 888px;
     margin: 0 auto;
@@ -26,9 +37,10 @@
   header img {
     width: 35%;
   }
+
   header {
     display: block;
-    width: 66%;
+    width: 67%;
   }
 
   .hamburger {
@@ -54,6 +66,19 @@
 
   nav ul a {
     text-decoration: none;
+    padding: 5px 7px;
+    border-radius: 9px;
+  }
+
+  nav ul a:hover {
+    background-color: #063b8c;
+    color: #f7f9fc;
+  }
+
+  nav ul a.active {
+    background-color: #063b8c;
+    color: #f7f9fc;
+    cursor: default;
   }
 
   .business-members {

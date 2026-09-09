@@ -14,7 +14,7 @@ const fetchMemberData = async () => {
   const response = await fetch(url);
   const members = await response.json();
   displayMembers(members);
-  console.log(members);
+  // console.log(members);
 };
 
 fetchMemberData();
@@ -31,7 +31,7 @@ const displayMembers = (members) => {
       <p>${member.description}</p>
       </div>
       <div class="image-wrapper">
-        <img src="${member.image}" alt="${member.name}" loading="lazy" width="300" height="auto" />
+        <img src="${member.image}" alt="${member.name}" loading="lazy" width="350" height="auto" />
         <div class="contact-wrapper">
           <a href="mailto:${member.email}">${member.email}</a>
           <a href="tel:${member.phone.replace(/[^0-9+]/g, "")}">${member.phone}</a>
