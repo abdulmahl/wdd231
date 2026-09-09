@@ -83,15 +83,29 @@ nav.show ul a {
 }
 
 .member-card img {
-  width: 100%;
+  width: 30%;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: space-start;
+  gap: 12px;
 }
 
 .title-container {
   color: #f7f9fc;
-  padding: 0 5px;
-  text-align: center;
 }
 
 .title-container h2 {
-  border-bottom: #f7f9fc solid 1px;
+  border-bottom: #f5c400 solid 1px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-wrapper a {
+  color: #f7f9fc;
+  text-decoration: none;
 }
