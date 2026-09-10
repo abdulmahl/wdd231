@@ -121,6 +121,7 @@ nav.show ul a.active {
 
 .member-card img {
   width: 39%;
+  height: auto;
   border-radius: 9px;
 }
 
