@@ -7,14 +7,37 @@ hamButton.addEventListener("click", () => {
 });
 
 const url = "https://abdulmahl.github.io/wdd231/chamber/data/members.json";
-
 const business_members = document.querySelector("#members");
 
+// Targeting explicit IDs directly
+const gridBtn = document.querySelector("#grid-view-btn");
+const listBtn = document.querySelector("#list-view-btn");
+
+business_members.classList.add("grid-view");
+gridBtn.classList.add("active-view");
+
+gridBtn.addEventListener("click", () => {
+  business_members.classList.add("grid-view");
+  business_members.classList.remove("list-view");
+  gridBtn.classList.add("active-view");
+  listBtn.classList.remove("active-view");
+});
+
+listBtn.addEventListener("click", () => {
+  business_members.classList.add("list-view");
+  business_members.classList.remove("grid-view");
+  listBtn.classList.add("active-view");
+  gridBtn.classList.remove("active-view");
+});
+
 const fetchMemberData = async () => {
-  const response = await fetch(url);
-  const members = await response.json();
-  displayMembers(members);
-  // console.log(members);
+  try {
+    const response = await fetch(url);
+    const members = await response.json();
+    displayMembers(members);
+  } catch (error) {
+    console.error("Error loading member data:", error);
+  }
 };
 
 fetchMemberData();
@@ -42,3 +65,8 @@ const displayMembers = (members) => {
     business_members.append(member_card);
   });
 };
+
+// Dynamic Year & Last Modified Footer Dates
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent =
+  `Last Modification: ${document.lastModified}`;

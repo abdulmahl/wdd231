@@ -2,8 +2,8 @@
   header img {
     width: 23%;
   }
-  .business-members {
-    grid-template-columns: 1fr 1fr;
+  .business-members.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 5px 10px;
   }
 
@@ -14,6 +14,25 @@
   nav.show ul a:hover {
     background-color: #063b8c;
     color: #f7f9fc;
+  }
+
+  .business-members.list-view .contact-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .business-members.list-view .member-card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-socials img {
+    padding: 7px;
+  }
+
+  .footer-socials img:hover {
+    background-color: #f5c400;
+    border-radius: 100%;
   }
 }
 
@@ -81,7 +100,19 @@
     cursor: default;
   }
 
-  .business-members {
+  .business-members.grid-view {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Desktop Footer Row Layout */
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-details {
+    text-align: right;
   }
 }
