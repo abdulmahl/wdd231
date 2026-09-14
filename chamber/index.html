@@ -37,12 +37,11 @@
     <title>Mamelodi Chamber - Home Page</title>
     <script src="scripts/directory.js" defer></script>
     <script type="module" src="scripts/index.js"></script>
-    <title>Document</title>
   </head>
   <body>
     <div class="site-header">
       <header>
-        <a href="/">
+        <a href="https://abdulmahl.github.io/wdd231/chamber/">
           <img src="images/logo_light.svg" alt="Site Logo" />
         </a>
         <button
@@ -63,13 +62,31 @@
       <nav id="menuItems">
         <ul>
           <li>
-            <a href="https://abdulmahl.github.io/wdd231/chamber/" class=""
+            <a href="https://abdulmahl.github.io/wdd231/chamber/" class="active"
               >Home</a
             >
           </li>
-          <li><a href="#" class="active">Directory</a></li>
-          <li><a href="#" class="">Join</a></li>
-          <li><a href="#" class="">Discover</a></li>
+          <li>
+            <a
+              href="https://abdulmahl.github.io/wdd231/chamber/directory.html"
+              class=""
+              >Directory</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://abdulmahl.github.io/wdd231/chamber/join.html"
+              class=""
+              >Join</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://abdulmahl.github.io/wdd231/chamber/discover.html"
+              class=""
+              >Discover</a
+            >
+          </li>
         </ul>
         <button
           class="theme-button-large theme-toggle"
@@ -79,5 +96,67 @@
         </button>
       </nav>
     </div>
+
+    <main style="height: 70dvh"></main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="footer-title">Mamelodi West Chamber</p>
+          <p>3338 Louis Mkhwebane</p>
+          <p>Mamelodi, Pretoria 0122</p>
+          <p>
+            <a href="mailto:info@mamschamber.co.za">info@mamschamber.co.za</a>
+          </p>
+          <p><a href="tel:2235552300">(012) 555-2300</a></p>
+        </div>
+
+        <div class="footer-socials">
+          <a
+            href="https://www.youtube.com/@_abdulmahl"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <img
+              src="images/footer-icons/youtube-svgrepo-com.svg"
+              alt="YouTube Icon"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://github.com/abdulmahl"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <img
+              src="images/footer-icons/github-svgrepo-com.svg"
+              alt="GitHub Icon"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdul-mahlangu/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="images/footer-icons/linkedin-svgrepo-com.svg"
+              alt="LinkedIn Icon"
+              class="social-icon"
+            />
+          </a>
+        </div>
+
+        <div class="footer-details">
+          <p>WDD231</p>
+          <p>Mduduzi Abdul</p>
+          <p>&copy; <span id="currentyear"></span> Mamelodi West Chamber</p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
