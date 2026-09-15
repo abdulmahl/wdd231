@@ -35,13 +35,14 @@
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="images/favicon.ico" />
     <title>Mamelodi West Chamber - Home Page</title>
+    <script src="scripts/index.js" defer></script>
     <script type="module" src="scripts/dateTime.js"></script>
     <script type="module" src="scripts/hamburgerButton.js"></script>
   </head>
   <body>
     <div class="site-header">
       <header>
-        <a href="https://abdulmahl.github.io/wdd231/chamber/">
+        <a href="index.html">
           <img src="images/logo_light.svg" alt="Site Logo" />
         </a>
         <button
@@ -62,30 +63,16 @@
       <nav id="menuItems">
         <ul>
           <li>
-            <a href="https://abdulmahl.github.io/wdd231/chamber/" class="active"
-              >Home</a
-            >
+            <a href="index.html" class="active">Home</a>
           </li>
           <li>
-            <a
-              href="https://abdulmahl.github.io/wdd231/chamber/directory.html"
-              class=""
-              >Directory</a
-            >
+            <a href="directory.html" class="">Directory</a>
           </li>
           <li>
-            <a
-              href="https://abdulmahl.github.io/wdd231/chamber/join.html"
-              class=""
-              >Join</a
-            >
+            <a href="join.html" class="">Join</a>
           </li>
           <li>
-            <a
-              href="https://abdulmahl.github.io/wdd231/chamber/discover.html"
-              class=""
-              >Discover</a
-            >
+            <a href="discover.html" class="">Discover</a>
           </li>
         </ul>
         <button
@@ -97,7 +84,64 @@
       </nav>
     </div>
 
-    <main style="height: 70dvh"></main>
+    <main>
+      <section class="hero">
+        <img
+          src="images/hero.jpg"
+          alt="Mamelodi West community"
+          width="1200"
+          height="600"
+        />
+
+        <div class="hero-content">
+          <h1>Welcome to Mamelodi West</h1>
+          <p>Connecting local businesses and strengthening our community.</p>
+          <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+      </section>
+
+      <section class="home-section events-section">
+        <h2>Current Events</h2>
+
+        <article class="event-card">
+          <h3>Local Business Networking Event</h3>
+          <p>
+            Meet local entrepreneurs and build valuable business connections.
+          </p>
+          <p><strong>Saturday, 20 September 2026</strong></p>
+        </article>
+
+        <article class="event-card">
+          <h3>Mamelodi West Community Business Forum</h3>
+          <p>
+            Join local businesses and community leaders for an evening of
+            discussion and collaboration.
+          </p>
+          <p><strong>Thursday, 24 September 2026</strong></p>
+        </article>
+      </section>
+
+      <section class="home-section weather-section">
+        <h2>Weather</h2>
+
+        <div id="current-weather">
+          <p>Loading weather...</p>
+        </div>
+
+        <div id="forecast">
+          <h3>3-Day Forecast</h3>
+          <div id="forecast-container"></div>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <h2>Business Spotlights</h2>
+
+        <div id="spotlight-container" class="spotlight-container">
+          <p>Loading business spotlights...</p>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-content">
