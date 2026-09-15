@@ -1,11 +1,3 @@
-const hamButton = document.querySelector("#ham-btn");
-const menuItems = document.querySelector("#menuItems");
-
-hamButton.addEventListener("click", () => {
-  hamButton.classList.toggle("open");
-  menuItems.classList.toggle("show");
-});
-
 const url = "https://abdulmahl.github.io/wdd231/chamber/data/members.json";
 const business_members = document.querySelector("#members");
 
@@ -65,8 +57,3 @@ const displayMembers = (members) => {
     business_members.append(member_card);
   });
 };
-
-// Dynamic Year & Last Modified Footer Dates
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent =
-  `Last Modification: ${document.lastModified}`;
