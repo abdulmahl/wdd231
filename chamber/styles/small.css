@@ -259,6 +259,10 @@ nav.show ul a.active {
   color: #f7f9fc;
 }
 
+.event-card p strong {
+  color: #f5c400;
+}
+
 .spotlight-card img {
   width: 100%;
   height: auto;
