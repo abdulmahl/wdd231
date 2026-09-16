@@ -5,7 +5,7 @@ const spotlightContainer = document.querySelector("#spotlight-container");
 
 const getRandomMembers = (members, number) => {
   const eligibleMembers = members.filter(
-    (member) => member.membership === "Gold" || member.membership === "Silver",
+    (member) => member.membership === 3 || member.membership === 2,
   );
 
   const shuffled = [...eligibleMembers].sort(() => Math.random() - 0.5);
