@@ -50,7 +50,7 @@ const displayMembers = (members) => {
         <div class="contact-wrapper">
           <a href="mailto:${member.email}">${member.email}</a>
           <a href="tel:${member.phone.replace(/[^0-9+]/g, "")}">${member.phone}</a>
-          <a href="${member.url}" target="_blank" rel="noopener">${member.url}</a>
+          <a href="${member.url}" target="_blank" rel="noopener">Website</a>
         </div>
       </div>`;
 
