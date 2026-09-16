@@ -2,6 +2,11 @@
   header img {
     width: 23%;
   }
+
+  .site-header {
+    padding: 0 10px;
+  }
+
   .business-members.grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 5px 10px;
@@ -24,6 +29,20 @@
   .business-members.list-view .member-card {
     flex-direction: row;
     align-items: center;
+  }
+
+  .hero {
+    margin: 0.666rem;
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 1rem;
+    background-color: rgba(247, 249, 252, 0.9);
+    border-radius: 9px;
   }
 
   .footer-socials img {
@@ -58,8 +77,7 @@
   }
 
   header {
-    display: block;
-    width: 67%;
+    border-bottom: none;
   }
 
   .hamburger {
@@ -69,6 +87,7 @@
   .site-header {
     display: flex;
     align-items: center;
+    border-bottom: #063b8c solid 1px;
   }
 
   nav {
@@ -102,6 +121,37 @@
 
   .business-members.grid-view {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-content {
+    left: 30px;
+    right: auto;
+    bottom: 30px;
+    max-width: 420px;
+  }
+
+  .spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .spotlight-card {
+    margin-bottom: 0;
+  }
+
+  #forecast-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .events-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .events-section h2 {
+    grid-column: 1 / -1;
   }
 
   /* Desktop Footer Row Layout */

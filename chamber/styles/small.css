@@ -13,6 +13,11 @@ header {
   padding: 10px;
   align-items: center;
   column-gap: 6px;
+  border-bottom: #063b8c solid 1px;
+}
+
+.site-header {
+  padding: 10px;
 }
 
 header img {
@@ -53,7 +58,7 @@ nav {
 nav.show {
   display: flex;
   padding: 10px;
-  border-top: #063b8c solid 0.7px;
+  border-bottom: #063b8c solid 1px;
 }
 
 nav.show ul {
@@ -82,7 +87,6 @@ nav.show ul a.active {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-top: #063b8c solid 0.7px;
 }
 
 .view-buttons {
@@ -202,6 +206,92 @@ nav.show ul a.active {
   gap: 14px;
   align-items: start;
 }
+
+/* Home Page styling */
+.hero {
+  position: relative;
+  margin: 0 1rem 1rem;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content h1 {
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1rem;
+  background-color: #f5c400;
+  color: #063b8c;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 7px;
+}
+
+.home-section {
+  padding: 0 1rem;
+}
+
+.home-section h2 {
+  border-bottom: 1px solid #063b8c;
+  margin-bottom: 1rem;
+}
+
+.event-card,
+.spotlight-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 9px;
+  background-color: #063b8c;
+  color: #f7f9fc;
+}
+
+.event-card h3,
+.event-card p,
+.spotlight-card h3,
+.spotlight-card p {
+  color: #f7f9fc;
+}
+
+.spotlight-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.home-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #e2e9f5;
+}
+
+.home-member-card p strong {
+  color: #e2e9f5;
+}
+
+.spotlight-card a {
+  color: #f5c400;
+}
+
+#forecast-container {
+  display: grid;
+  gap: 10px;
+}
+
+.forecast-card {
+  padding: 1rem;
+  border: 1px solid #063b8c;
+  border-radius: 9px;
+}
+
+/* End of home page styling */
 
 footer {
   padding: 1.5rem 1rem;
