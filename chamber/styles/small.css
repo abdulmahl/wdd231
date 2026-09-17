@@ -316,7 +316,6 @@ nav.show ul a.active {
 }
 
 .weather-card {
-  max-width: 450px;
   margin: 1rem auto;
   padding: 0.555rem;
   background-color: var(--background-color);

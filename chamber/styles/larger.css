@@ -166,10 +166,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .home-section h2 {
-    margin-bottom: 0rem;
-  }
-
   /* Desktop Footer Row Layout */
   .footer-content {
     flex-direction: row;
