@@ -1,14 +1,3 @@
-:root {
-  --primary-color: #063b8c;
-  --secondary-color: #f5c400;
-  --background-color: #f7f9fc;
-  --text-color-dark: #041c41;
-  --text-color-light: #eaeaeb;
-  --odd: #eaf1fa;
-  --even: #e2e9f5;
-  --font-family: "Outfit";
-}
-
 @media only screen and (min-width: 38rem) {
   header img {
     width: 23%;
@@ -29,7 +18,7 @@
 
   nav.show ul a:hover {
     background-color: var(--primary-color);
-    color: #f7f9fc;
+    color: var(--text-color-light);
   }
 
   .business-members.list-view .contact-wrapper {
