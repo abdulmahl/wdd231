@@ -308,7 +308,7 @@ nav.show ul a.active {
 .weather-card {
   max-width: 450px;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: .555rem;
   background-color: var(--background-color);
   border-radius: 16px;
   box-shadow: 0 4px 15px var(--primary-color);
@@ -337,8 +337,8 @@ nav.show ul a.active {
 }
 
 .weather-header img {
-  width: 100px;
-  height: 100px;
+  width: 77px;
+  height: 77px;
 }
 
 .current-temperature {
