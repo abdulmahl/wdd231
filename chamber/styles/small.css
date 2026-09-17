@@ -299,6 +299,14 @@ nav.show ul a.active {
 
 .spotlight-card a {
   color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.spotlight-card a:hover {
+  color: var(--text-color-light);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: all ease-in-out;
 }
 
 .home-section-container {
