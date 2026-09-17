@@ -1,10 +1,21 @@
+:root {
+  --primary-color: #063b8c;
+  --secondary-color: #f5c400;
+  --background-color: #f7f9fc;
+  --text-color-dark: #063b8c;
+  --text-color-light: #f7f9fc;
+  --odd: #f7f9fc;
+  --even: #e2e9f5;
+  --font-family: "Outfit";
+}
+
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  color: #063b8c;
+  color: var(--text-color-dark);
 }
 
 header {
@@ -13,7 +24,7 @@ header {
   padding: 10px;
   align-items: center;
   column-gap: 6px;
-  border-bottom: #063b8c solid 1px;
+  border-bottom: var(--primary-color) solid 1px;
 }
 
 .site-header {
@@ -33,7 +44,7 @@ header img {
 .hamburger {
   background: none;
   border: none;
-  color: #063b8c;
+  color: var(--primary-color);
   cursor: pointer;
   font-size: 2.2rem;
   margin-top: -9px;
@@ -58,7 +69,7 @@ nav {
 nav.show {
   display: flex;
   padding: 10px;
-  border-bottom: #063b8c solid 1px;
+  border-bottom: var(--primary-color) solid 1px;
 }
 
 nav.show ul {
@@ -71,14 +82,14 @@ nav.show ul {
 
 nav.show ul a {
   text-decoration: none;
-  color: #063b8c;
+  color: var(--text-color-dark);
   padding: 3px 5px;
   border-radius: 9px;
 }
 
 nav.show ul a.active {
-  background-color: #063b8c;
-  color: #f7f9fc;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
   cursor: default;
 }
 
@@ -97,15 +108,15 @@ nav.show ul a.active {
 .view-buttons button {
   padding: 6px 12px;
   cursor: pointer;
-  border: 1px solid #063b8c;
-  background-color: #f7f9fc;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
   border-radius: 6px;
   font-weight: 600;
 }
 
 .view-buttons button.active-view {
-  background-color: #063b8c;
-  color: #f7f9fc;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
 }
 
 .business-members.grid-view {
@@ -120,7 +131,7 @@ nav.show ul a.active {
   flex-direction: column;
   padding: 10px;
   gap: 9px;
-  background-color: #063b8c;
+  background-color: var(--primary-color);
   border-radius: 9px;
 }
 
@@ -138,11 +149,11 @@ nav.show ul a.active {
 
 .title-container h2,
 .title-container p {
-  color: #f7f9fc;
+  color: var(--text-color-light);
 }
 
 .title-container h2 {
-  border-bottom: #f5c400 solid 1px;
+  border-bottom: var(--secondary-color) solid 1px;
 }
 
 .contact-wrapper {
@@ -152,7 +163,7 @@ nav.show ul a.active {
 }
 
 .contact-wrapper a {
-  color: #f7f9fc;
+  color: var(--text-color-light);
   text-decoration: none;
 }
 
@@ -167,28 +178,28 @@ nav.show ul a.active {
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  border: 1px solid #063b8c;
+  border: 1px solid var(--primary-color);
   border-bottom: none;
   border-radius: 0;
   padding: 10px 14px;
 }
 
 .business-members.list-view .member-card:last-child {
-  border-bottom: 1px solid #063b8c;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .business-members.list-view .member-card:nth-child(odd) {
-  background-color: #f7f9fc;
+  background-color: var(--odd);
 }
 
 .business-members.list-view .member-card:nth-child(even) {
-  background-color: #e2e9f5;
+  background-color: var(--even);
 }
 
 .business-members.list-view .member-card h2,
 .business-members.list-view .member-card p,
 .business-members.list-view .member-card a {
-  color: #063b8c;
+  color: var(--text-color-dark);
 }
 
 .business-members.list-view .member-card img,
@@ -227,8 +238,8 @@ nav.show ul a.active {
   display: inline-block;
   margin-top: 0.75rem;
   padding: 0.7rem 1rem;
-  background-color: #f5c400;
-  color: #063b8c;
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
   text-decoration: none;
   font-weight: 700;
   border-radius: 7px;
@@ -239,7 +250,7 @@ nav.show ul a.active {
 }
 
 .home-section h2 {
-  border-bottom: 1px solid #063b8c;
+  border-bottom: 1px solid var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -248,19 +259,19 @@ nav.show ul a.active {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 9px;
-  background-color: #063b8c;
-  color: #f7f9fc;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
 }
 
 .event-card h3,
 .event-card p,
 .spotlight-card h3,
 .spotlight-card p {
-  color: #f7f9fc;
+  color: var(--text-color-light);
 }
 
 .event-card p strong {
-  color: #f5c400;
+  color: var(--secondary-color);
 }
 
 .spotlight-card img {
@@ -273,25 +284,110 @@ nav.show ul a.active {
   display: flex;
   flex-direction: column;
   align-items: start;
-  color: #e2e9f5;
+  color: var(--even);
 }
 
 .home-member-card p strong {
-  color: #e2e9f5;
+  color: var(--even);
 }
 
 .spotlight-card a {
-  color: #f5c400;
+  color: var(--secondary-color);
 }
 
-#forecast-container {
+.weather-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forecast h3 {
+  text-align: center;
+}
+
+.weather-card {
+  max-width: 450px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px var(--primary-color);
+  border-top: 6px solid var(--secondary-color);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 16px;
+  background: var(--even);
+}
+
+.weather-header h2 {
+  margin: 0;
+  color: var(--text-color-dark);
+  font-size: 1rem;
+}
+
+.weather-header p {
+  margin: 0.4rem 0 0;
+  text-transform: capitalize;
+  color: var(--text-color-dark);
+}
+
+.weather-header img {
+  width: 100px;
+  height: 100px;
+}
+
+.current-temperature {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.5rem 0 1.5rem;
+  color: var(--primary-color);
+}
+
+.current-temperature span:first-child {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.current-temperature span:last-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.weather-details {
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.weather-details div {
+  padding: 0.8rem;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.weather-details span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+}
+
+.weather-details strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
 }
 
 .forecast-card {
   padding: 1rem;
-  border: 1px solid #063b8c;
+  border: 1px solid var(--primary-color);
   border-radius: 9px;
 }
 
@@ -307,7 +403,7 @@ footer {
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  border-top: #063b8c solid 1px;
+  border-top: var(--primary-color) solid 1px;
   padding-top: 12px;
 }
 
