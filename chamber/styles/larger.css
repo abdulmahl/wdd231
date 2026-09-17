@@ -157,13 +157,17 @@
   }
 
   .events-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .events-section h2 {
-    grid-column: 1 / -1;
+  .home-section-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-section h2 {
+    margin-bottom: 0rem;
   }
 
   /* Desktop Footer Row Layout */

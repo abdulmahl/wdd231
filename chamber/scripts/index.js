@@ -33,7 +33,7 @@ const displaySpotlights = (members) => {
       <div class="home-member-card">
         <h3>${member.name}</h3>
         <p>${member.description}</p>
-        <p><strong>Membership:</strong> ${member.membership}</p>
+        <p><strong>Membership:</strong> ${member.membership === 3 ? "Gold" : member.membership === 2 ? "Silver" : "Bronze"}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
         <p><strong>Address:</strong> ${member.address}</p>
         <a

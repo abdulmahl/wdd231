@@ -301,6 +301,10 @@ nav.show ul a.active {
   color: var(--secondary-color);
 }
 
+.home-section-container {
+  display: grid;
+}
+
 .weather-icon {
   display: flex;
   flex-direction: column;
