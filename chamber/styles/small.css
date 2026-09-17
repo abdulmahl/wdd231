@@ -245,6 +245,12 @@ nav.show ul a.active {
   border-radius: 7px;
 }
 
+.cta-button:hover {
+  background-color: var(--primary-color);
+  transition: ease-in-out;
+  color: var(--text-color-light);
+}
+
 .home-section {
   padding: 0 1rem;
 }
