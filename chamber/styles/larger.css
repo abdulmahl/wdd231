@@ -31,6 +31,10 @@
     align-items: center;
   }
 
+  .hero img {
+    height: 70dvh;
+  }
+
   .hero {
     margin: 0.666rem;
   }
@@ -133,6 +137,10 @@
 
   .business-members.grid-view {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero img {
+    height: 67dvh;
   }
 
   .hero-content {
