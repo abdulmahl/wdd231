@@ -3,10 +3,12 @@
   --bg-color: #f4f7f4;
   --text-color: #222222;
   --card-bg: #ffffff;
+  --font-headers: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -24,7 +26,7 @@ header {
 h1,
 h2,
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-headers);
 }
 
 main,
