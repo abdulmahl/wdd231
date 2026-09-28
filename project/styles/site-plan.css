@@ -29,7 +29,7 @@ h3 {
 
 main,
 header {
-  max-width: 900px;
+  max-width: 888px;
   margin: 0 auto;
 }
 
@@ -76,9 +76,27 @@ ul {
   background-color: #222222;
 }
 
+img.wireframes {
+  width: 255px;
+  margin: 0 auto;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   color: #666;
+}
+
+@media only screen and (min-width: 34rem) {
+  img.wireframes {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 45rem) {
+  img.wireframes {
+    width: 777px;
+  }
 }
