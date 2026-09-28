@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="images/favicon.ico" />
-    <title>Mamelodi West Chamber - Join Page</title>
+    <title>Mamelodi West Chamber - Thank You</title>
     <script type="module" src="scripts/hamburger_button.js"></script>
     <script type="module" src="scripts/date_time.js"></script>
     <script src="scripts/join.js" defer></script>
@@ -86,149 +86,9 @@
 
     <main>
       <section class="page-heading">
-        <h1>Join the Chamber</h1>
+        <h1>Thank You!</h1>
+        <div id="thank-you-msg"></div>
       </section>
-
-      <div class="join-layout">
-        <section class="membership-form">
-          <h2>Membership Application</h2>
-
-          <form method="get" action="thankyou.html">
-            <label for="first-name">
-              First Name
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                title="Enter your first name"
-                autocomplete="given-name"
-                required
-              />
-            </label>
-
-            <label for="last-name">
-              Last Name
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                title="Enter your last name"
-                autocomplete="family-name"
-                required
-              />
-            </label>
-
-            <label for="title">
-              Organizational Title
-              <input
-                type="text"
-                id="title"
-                name="title"
-                title="Enter your organizational title"
-                autocomplete="organization-title"
-                pattern="[A-Za-zÀ-ÿ\s\-]{7,}"
-              />
-            </label>
-
-            <label for="email">
-              Email
-              <input
-                type="email"
-                id="email"
-                name="email"
-                title="Enter your email address"
-                autocomplete="email"
-                placeholder="example@email.com"
-                required
-              />
-            </label>
-
-            <label for="phone">
-              Mobile Phone
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                title="Enter your mobile phone number"
-                autocomplete="tel"
-                required
-              />
-            </label>
-
-            <label for="business-name">
-              Business Name
-              <input
-                type="text"
-                id="business-name"
-                name="businessName"
-                title="Enter your business name"
-                autocomplete="organization"
-                required
-              />
-            </label>
-
-            <label for="membership-level">
-              Membership Level
-              <select
-                id="membership-level"
-                name="membershipLevel"
-                title="Select your membership level"
-                required
-              >
-                <option value="" disabled selected>
-                  Select a membership level
-                </option>
-                <option value="np">NP Membership</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-              </select>
-            </label>
-
-            <label for="description">
-              Business Description
-              <textarea
-                id="description"
-                name="description"
-                title="Describe your business"
-                rows="5"
-              ></textarea>
-            </label>
-
-            <input type="hidden" name="timestamp" id="timestamp" value="" />
-
-            <button type="submit" class="cta-button">Submit Application</button>
-          </form>
-        </section>
-
-        <section class="membership-levels">
-          <h2>Membership Levels</h2>
-          <div></div>
-          <article class="membership-card">
-            <h3>NP Membership</h3>
-            <p>For nonprofit organizations supporting our community.</p>
-            <button type="button">Learn More</button>
-          </article>
-
-          <article class="membership-card">
-            <h3>Bronze Membership</h3>
-            <p>Essential benefits for small and growing businesses.</p>
-            <button type="button">Learn More</button>
-          </article>
-
-          <article class="membership-card">
-            <h3>Silver Membership</h3>
-            <p>Additional visibility and opportunities to connect.</p>
-            <button type="button">Learn More</button>
-          </article>
-
-          <article class="membership-card">
-            <h3>Gold Membership</h3>
-            <p>Expanded promotional and networking opportunities.</p>
-            <button type="button">Learn More</button>
-          </article>
-        </section>
-      </div>
     </main>
 
     <footer>

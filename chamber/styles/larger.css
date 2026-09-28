@@ -80,6 +80,21 @@
     margin: 0 auto;
   }
 
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 19.1%;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--background-color);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  main {
+    padding-top: 95px;
+  }
+
   .theme-button-small {
     display: none;
   }
@@ -103,6 +118,7 @@
   .site-header {
     display: flex;
     align-items: center;
+
     border-bottom: var(--primary-color) solid 1px;
   }
 
@@ -171,6 +187,19 @@
   }
 
   .home-section-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .join-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .membership-form {
+    padding: 1.5rem;
+  }
+
+  .membership-levels {
     grid-template-columns: 1fr 1fr;
   }
 
