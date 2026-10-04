@@ -61,6 +61,59 @@
     font-size: 3.5rem;
   }
 
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "sidebar card-1"
+      "sidebar card-2"
+      "card-3 card-4"
+      "card-5 card-6"
+      "card-7 card-8";
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  /* Map each element to its named grid area */
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .card-1 {
+    grid-area: card-1;
+  }
+  .card-2 {
+    grid-area: card-2;
+  }
+  .card-3 {
+    grid-area: card-3;
+  }
+  .card-4 {
+    grid-area: card-4;
+  }
+  .card-5 {
+    grid-area: card-5;
+  }
+  .card-6 {
+    grid-area: card-6;
+  }
+  .card-7 {
+    grid-area: card-7;
+  }
+  .card-8 {
+    grid-area: card-8;
+  }
+
+  /* Rubric Requirement: CSS Hover Effect on Gallery Images (Desktop Only) */
+  .card img {
+    transition:
+      transform 0.4s ease,
+      filter 0.4s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.04);
+    filter: brightness(1.08) contrast(1.05);
+  }
+
   .footer-socials img {
     padding: 7px;
   }
@@ -93,6 +146,16 @@
 
   main {
     padding-top: 95px;
+  }
+
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "sidebar card-1"
+      "sidebar card-2"
+      "card-3 card-4"
+      "card-5 card-6"
+      "card-7 card-8";
   }
 
   .theme-button-small {

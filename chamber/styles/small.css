@@ -427,6 +427,116 @@ strong {
 /* Dialog styling end */
 
 /* Form styling start */
+/* Discover Page Grid Layout (Mobile: 1 Column) */
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "sidebar"
+    "card-1"
+    "card-2"
+    "card-3"
+    "card-4"
+    "card-5"
+    "card-6"
+    "card-7"
+    "card-8";
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  padding: 1.25rem;
+  border-radius: 12px;
+  max-width: 11rem;
+  margin-left: 2rem;
+  box-shadow: 0 4px 12px rgba(6, 59, 140, 0.15);
+}
+
+.sidebar h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+#visitor-message {
+  color: var(--text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Discover Card Styling */
+.card {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+  margin: 0;
+}
+
+.card figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.card address {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+  flex-grow: 1;
+}
+
+.card button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
 
 .page-heading {
   padding: 1rem;
