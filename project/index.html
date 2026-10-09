@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Underground Archive | Indie Hip-Hop & Producer Showcase</title>
+    <meta
+      name="description"
+      content="Explore a curated archive of classic underground hip-hop tracks, groups, albums, and producers through concise retrospectives and track breakdowns."
+    />
+    <meta name="author" content="Mduduzi Abdul Mahlangu" />
+    <meta
+      property="og:title"
+      content="Underground Archive | Indie Hip-Hop & Producer Showcase"
+    />
+    <meta
+      property="og:description"
+      content="A curated digital archive celebrating classic underground hip-hop groups, albums, tracks, and producers."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://abdulmahl.github.io/wdd231/final/"
+    />
+    <meta property="og:image" content="images/og-archive.svg" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Oswald:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Underground Archive home">
+        <img src="images/logo-mark.svg" alt="" width="42" height="42" />
+        <span>
+          <strong>Underground Archive</strong>
+          <small>Indie Hip-Hop & Producer Showcase</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="sr-only">Open navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="active" aria-current="page" href="index.html">Archive</a>
+        <a href="albums.html">Albums</a>
+        <a href="producers.html">Producers</a>
+        <a href="#recommend">Recommend a Classic</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero wrapper">
+        <div class="hero-copy">
+          <p class="eyebrow">CURATED / 1990s–2000s / BOOM BAP / INDIE</p>
+          <h1>Dig deeper than the singles.</h1>
+          <p class="hero-text">
+            A living archive of groups, records, and beatmakers who built
+            underground hip-hop from sample chops, dusty drums, sharp writing,
+            and independent hustle.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#archive"
+              >Explore the archive</a
+            >
+            <a class="button button-ghost" href="producers.html"
+              >Meet the producers</a
+            >
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="images/hero-grid.svg" alt="" width="560" height="440" />
+          <div class="hero-stamp">PRESS<br />PLAY<br />ON THE<br />ARCHIVE</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Archive themes">
+        <div class="ticker-track">
+          <span>GROUPS</span><span>ALBUMS</span><span>TRACK BREAKDOWNS</span
+          ><span>PRODUCERS</span><span>REGIONAL SCENES</span
+          ><span>SAMPLE CULTURE</span>
+        </div>
+      </section>
+
+      <section class="wrapper section" id="archive">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE CRATE</p>
+            <h2>Archive cuts</h2>
+          </div>
+          <p id="crate-count" class="count-pill">0 saved</p>
+        </div>
+
+        <div class="filters" aria-label="Archive filters">
+          <label>
+            Search
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search artist, track, producer..."
+            />
+          </label>
+          <label>
+            Era
+            <select id="era-filter">
+              <option value="all">All eras</option>
+              <option value="1990s">1990s</option>
+              <option value="2000s">2000s</option>
+              <option value="2010s">2010s</option>
+            </select>
+          </label>
+          <label class="check-wrap">
+            <input id="saved-only" type="checkbox" />
+            Show saved only
+          </label>
+        </div>
+
+        <div
+          id="archive-status"
+          class="status"
+          role="status"
+          aria-live="polite"
+        >
+          Loading archive…
+        </div>
+        <div id="archive-grid" class="archive-grid"></div>
+      </section>
+
+      <section class="dark-band">
+        <div class="wrapper split-band">
+          <div>
+            <p class="eyebrow">WHY THE ARCHIVE?</p>
+            <h2>Because the beat tells a story too.</h2>
+          </div>
+          <p>
+            These records are snapshots of craft: the loop, the drum pattern,
+            the MC chemistry, the label, the city, and the choices that made a
+            sound feel unmistakably its own.
+          </p>
+        </div>
+      </section>
+
+      <section class="wrapper section" id="recommend">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ADD TO THE CRATE</p>
+            <h2>Recommend a classic</h2>
+          </div>
+        </div>
+        <form class="recommend-form" action="form-action.html" method="get">
+          <div class="form-grid">
+            <label
+              >Artist / group<input name="artist" required maxlength="80"
+            /></label>
+            <label>Track<input name="track" required maxlength="100" /></label>
+            <label>Album<input name="album" required maxlength="100" /></label>
+            <label
+              >Producer<input name="producer" required maxlength="80"
+            /></label>
+            <label
+              >Release year<input
+                name="year"
+                type="number"
+                min="1970"
+                max="2026"
+                required
+            /></label>
+            <label
+              >Your name<input name="name" required maxlength="80"
+            /></label>
+            <label class="full"
+              >Why should it be archived?<textarea
+                name="reason"
+                required
+                minlength="20"
+                maxlength="500"
+                rows="5"
+              ></textarea>
+            </label>
+          </div>
+          <button class="button button-primary" type="submit">
+            Submit recommendation
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <dialog
+      id="detail-dialog"
+      class="detail-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <div class="dialog-shell">
+        <button
+          id="dialog-close"
+          class="dialog-close"
+          type="button"
+          aria-label="Close track details"
+        >
+          ×
+        </button>
+        <div id="dialog-cover" class="dialog-cover" aria-hidden="true"></div>
+        <div class="dialog-content">
+          <p id="dialog-kicker" class="eyebrow"></p>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-subtitle" class="dialog-subtitle"></p>
+          <dl id="dialog-meta" class="meta-list"></dl>
+          <div class="dialog-note">
+            <h3>Archive note</h3>
+            <p id="dialog-note"></p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html"
+            ><img
+              src="images/logo-mark.svg"
+              alt=""
+              width="36"
+              height="36"
+              loading="lazy"
+            /><span
+              ><strong>Underground Archive</strong
+              ><small>A WDD 231 individual project.</small></span
+            ></a
+          >
+        </div>
+        <nav aria-label="Footer navigation" class="footer-nav">
+          <a href="index.html">Archive</a>
+          <a href="albums.html">Albums</a>
+          <a href="producers.html">Producers</a>
+          <a href="attributions.html">Attributions</a>
+          <a
+            id="video-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener"
+            >Demo video</a
+          >
+        </nav>
+        <p class="footer-note">
+          © <span id="current-year"></span> Mduduzi Abdul Mahlangu
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

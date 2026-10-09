@@ -1,0 +1,74 @@
+[
+  {
+    "name": "J Dilla",
+    "scene": "Detroit / Soulquarians",
+    "era": "1990s–2000s",
+    "signature": "Human-feeling drum placement, warped samples, and grooves that refuse to sit perfectly on the grid.",
+    "knownFor": "Sample flips and off-center swing",
+    "notable": "The Pharcyde, Common, Slum Village",
+    "approach": "Treat the sample and the drums as one moving instrument."
+  },
+  {
+    "name": "DJ Premier",
+    "scene": "New York / Gang Starr",
+    "era": "1990s–2000s",
+    "signature": "Hard drums, chopped loops, scratches, and concise arrangements that put the MC first.",
+    "knownFor": "Boom-bap architecture and DJ cuts",
+    "notable": "Gang Starr, Jeru the Damaja, Nas",
+    "approach": "Find one strong musical idea and make every bar land."
+  },
+  {
+    "name": "Pete Rock",
+    "scene": "Mount Vernon / New York",
+    "era": "1990s–2000s",
+    "signature": "Layered soul textures, bright horns, thick kicks, and a deep sense of melody.",
+    "knownFor": "Soul sample orchestration",
+    "notable": "C.L. Smooth, Heavy D, Brand Nubian",
+    "approach": "Build the loop like a small arrangement rather than a single sample."
+  },
+  {
+    "name": "9th Wonder",
+    "scene": "Durham / North Carolina",
+    "era": "2000s",
+    "signature": "Soul samples, strong drum loops, warm bass movement, and a deliberately classic feel.",
+    "knownFor": "Soulful boom-bap revival",
+    "notable": "Little Brother, Murs, Jean Grae",
+    "approach": "Keep the sample emotional, then let the drums create the head-nod."
+  },
+  {
+    "name": "Hi-Tek",
+    "scene": "Cincinnati / Rawkus",
+    "era": "1990s–2000s",
+    "signature": "Soulful melodies, restrained drums, and a spacious sound that gives lyricists room.",
+    "knownFor": "Lyrical-collaboration production",
+    "notable": "Black Star, Reflection Eternal, Talib Kweli",
+    "approach": "Use texture and negative space as part of the arrangement."
+  },
+  {
+    "name": "Alchemist",
+    "scene": "Los Angeles / Independent",
+    "era": "2000s–2010s",
+    "signature": "Dusty loops, cinematic fragments, gritty drums, and minimal arrangements.",
+    "knownFor": "Dark, sample-heavy atmospheres",
+    "notable": "Dilated Peoples, Mobb Deep, Prodigy",
+    "approach": "Choose a strange or striking sample and protect its mood."
+  },
+  {
+    "name": "Q-Tip",
+    "scene": "Queens / Native Tongues",
+    "era": "1990s–2000s",
+    "signature": "Jazz-informed sampling, bass-forward grooves, unusual song structures, and subtle musical details.",
+    "knownFor": "Musical group production",
+    "notable": "A Tribe Called Quest, his solo work",
+    "approach": "Make the loop musical enough to feel complete before the MC enters."
+  },
+  {
+    "name": "Easy Mo Bee",
+    "scene": "Brooklyn / New York",
+    "era": "1990s",
+    "signature": "Dark loops, heavyweight drums, and straightforward arrangements built to support aggressive verses.",
+    "knownFor": "East Coast street rap production",
+    "notable": "The Notorious B.I.G., Craig Mack, 2Pac",
+    "approach": "Keep the beat simple, then make the drum pattern hit hard."
+  }
+]

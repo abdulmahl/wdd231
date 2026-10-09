@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Producers | Underground Archive</title>
+    <meta
+      name="description"
+      content="Producer spotlights exploring the styles, scenes, and techniques behind influential underground hip-hop records."
+    />
+    <meta name="author" content="Mduduzi Abdul Mahlangu" />
+    <meta property="og:title" content="Producers | Underground Archive" />
+    <meta
+      property="og:description"
+      content="Producer spotlights exploring the people behind influential underground hip-hop records."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://abdulmahl.github.io/wdd231/final/producers.html"
+    />
+    <meta property="og:image" content="images/og-archive.svg" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Oswald:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="module" src="scripts/producers.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Underground Archive home"
+        ><img src="images/logo-mark.svg" alt="" width="42" height="42" /><span
+          ><strong>Underground Archive</strong
+          ><small>Indie Hip-Hop & Producer Showcase</small></span
+        ></a
+      >
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="sr-only">Open navigation</span>☰
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Archive</a><a href="albums.html">Albums</a
+        ><a class="active" aria-current="page" href="producers.html"
+          >Producers</a
+        ><a href="index.html#recommend">Recommend a Classic</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero producer-hero wrapper">
+        <p class="eyebrow">BEHIND THE BOARDS</p>
+        <h1>Sample. Chop. Flip. Repeat.</h1>
+        <p>
+          Producer spotlights focused on sound, technique, and the fingerprints
+          that make a beat immediately recognizable.
+        </p>
+      </section>
+
+      <section class="wrapper section">
+        <div
+          id="producers-status"
+          class="status"
+          role="status"
+          aria-live="polite"
+        >
+          Loading producers…
+        </div>
+        <div id="producers-grid" class="producer-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-grid">
+        <a class="brand brand-footer" href="index.html"
+          ><img
+            src="images/logo-mark.svg"
+            alt=""
+            width="36"
+            height="36"
+            loading="lazy"
+          /><span
+            ><strong>Underground Archive</strong
+            ><small>A WDD 231 individual project.</small></span
+          ></a
+        >
+        <nav aria-label="Footer navigation" class="footer-nav">
+          <a href="index.html">Archive</a><a href="albums.html">Albums</a
+          ><a href="producers.html">Producers</a
+          ><a href="attributions.html">Attributions</a
+          ><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+            >Demo video</a
+          >
+        </nav>
+        <p class="footer-note">
+          © <span id="current-year"></span> Mduduzi Abdul Mahlangu
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
